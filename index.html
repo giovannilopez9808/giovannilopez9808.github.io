@@ -13,7 +13,7 @@
     <meta name="author" content="Giovanni Lopez <giovannilopez9808@gmail.com>" />
 
     <title>
-      Portfolio - {{ data.profile.first_name }} {{ data.profile.last_name }}
+      Portfolio - Giovanni Gamaliel López Padilla
     </title>
 
     <!-- Bootstrap core CSS -->
@@ -52,12 +52,12 @@
     >
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none text-white subheading"
-          >{{ data.profile.first_name }} {{ data.profile.last_name }}</span
+          >Giovanni Gamaliel López Padilla</span
         >
         <span class="d-none d-lg-block">
           <img
             class="img-fluid img-profile rounded-circle mx-auto mb-2"
-            src="{{ data.profile.picture }}"
+            src="static/img/image.jpg"
             alt=""
           />
         </span>
@@ -105,28 +105,38 @@
       >
         <div class="w-100">
           <h1 class="mb-0">
-            {{ data.profile.first_name }}
-            <span class="text-primary">{{ data.profile.last_name }}</span>
+            Giovanni Gamaliel
+            <span class="text-primary">López Padilla</span>
           </h1>
           <div class="subheading mb-5">
-            {% for item in data.profile.contact.values() %} {% if item != None
-            %} {{ item }} · {% endif %} {% endfor %}
-            <a href="mailto:{{ data.profile.email }}" style="color: #73b2ff;"
-              >{{ data.profile.email }}</a
+              Torreón, Coahuila ·      871-278-37-70 ·  
+            <a href="mailto:giovannilopez9808@gmail.com" style="color: #73b2ff;"
+              >giovannilopez9808@gmail.com</a
             >
           </div>
-          <p class="lead mb-5">{{ data.profile.description }}</p>
+          <p class="lead mb-5">Soy un científico entusiasmado en el análisis de datos y su representación física. Practicante de Data Science con el desarrollo de soluciones tecnológicas haciendo uso de algoritmos, teorías físicas, programación, modelos matemáticos, extracción y visualización de datos. Apoyando a organizaciones civiles con herramientas computacionales.</p>
           <div class="social-icons">
-            {% for key, value in data.social.items() %} {% if value != None %}
-            {% if key == 'website' %}
-            <a href="{{ data.social.website }}" target="_blank">
+             
+            
+            <a href="https://resumegglp.herokuapp.com/" target="_blank">
               <i class="fas fa-globe-americas"></i>
             </a>
-            {% else %}
-            <a href="{{ value }}" target="_blank">
-              <i class="fab fa-{{ key }}"></i>
+               
+            
+            <a href="https://github.com/giovannilopez9808/Resume/raw/main/Document/cv_gglp.pdf" target="_blank">
+              <i class="fab fa-wpforms"></i>
             </a>
-            {% endif %} {% endif %} {% endfor %}
+               
+            
+            <a href="https://github.com/giovannilopez9808" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+                 
+            
+            <a href="https://www.linkedin.com/in/gamaliel-lópez-padilla" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+                    
           </div>
         </div>
       </section>
@@ -141,21 +151,78 @@
 
           <div class="subheading mb-3">Lenguajes de programación &amp; herramientas</div>
           <ul class="list-inline dev-icons">
-            {% for item in data.tools %}
+            
             <li class="list-inline-item">
-              <i class="fab fa-{{ item }}"></i>
+              <i class="fab fa-python"></i>
             </li>
-            {% endfor %}
+            
+            <li class="list-inline-item">
+              <i class="fab fa-git-alt"></i>
+            </li>
+            
+            <li class="list-inline-item">
+              <i class="fab fa-slack"></i>
+            </li>
+            
+            <li class="list-inline-item">
+              <i class="fab fa-trello"></i>
+            </li>
+            
+            <li class="list-inline-item">
+              <i class="fab fa-markdown"></i>
+            </li>
+            
+            <li class="list-inline-item">
+              <i class="fab fa-html5"></i>
+            </li>
+            
+            <li class="list-inline-item">
+              <i class="fab fa-css3-alt"></i>
+            </li>
+            
+            <li class="list-inline-item">
+              <i class="fab fa-bootstrap"></i>
+            </li>
+            
+            <li class="list-inline-item">
+              <i class="fab fa-linux"></i>
+            </li>
+            
           </ul>
 
           <div class="subheading mb-3">Extra skills / knowledge</div>
           <ul class="fa-ul mb-0">
-            {% for item in data.extra_skills %}
+            
             <li>
               <i class="fa-li fa fa-check"></i>
-              {{ item }}
+              Extracción de los datos de la NASA, ESA, AERONET, DAVIS
             </li>
-            {% endfor %}
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Automatización de de análisis de datos
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Ajuste de modelos matemáticos basado en datos experimentales
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Procesamiento de imagenes
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Inteligencia artificial
+            </li>
+            
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Análisis de datos gubernamentales e institucionales
+            </li>
+            
           </ul>
         </div>
       </section>
@@ -167,22 +234,78 @@
         <div class="w-100">
           <h2 class="mb-5">Educacion</h2>
 
-          {% for _, item in data.education.items() %} {% if _ != 'reference' %}
+           
           <div
             class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
           >
             <div class="resume-content">
-              <h3 class="mb-0">{{ item.institution }}</h3>
-              <div class="subheading mb-3">{{ item.program }}</div>
-              <div>{{ item.description }}</div>
-              <p>{{ item.gpa }}</p>
+              <h3 class="mb-0">Data Structures and Algorithms in Python</h3>
+              <div class="subheading mb-3">Programa propórcionado por jovian.ai</div>
+              <div></div>
+              <p></p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">{{ item.from }} - {{ item.to }}</span>
+              <span class="text-primary">Enero 2021 - Marzo 2021</span>
             </div>
           </div>
-          {% else %}
-          {% endif %} {% endfor %}
+            
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Deep Learning with Pytorch</h3>
+              <div class="subheading mb-3">Programa proporcionado en jovian.ai</div>
+              <div>Introducción a la libreria pytorch para el uso de inteligencia artificial en imagenes</div>
+              <p></p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Diciembre 2020 - Enero 2021</span>
+            </div>
+          </div>
+            
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Universidad Autónoma de Nuevo León</h3>
+              <div class="subheading mb-3">Licenciatura en física</div>
+              <div>Titulación en proceso con especialización en simulaciones numéricas.</div>
+              <p></p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Agosto 2016 - Diciembre 2020</span>
+            </div>
+          </div>
+            
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Universidad Nacional de Córdoba</h3>
+              <div class="subheading mb-3">Ecuaciones en Derivadas Parciales, desde la teoría a las aproximaciones numéricas</div>
+              <div>Curso de posgrado donde se revisaron los fundamentos de las ecuaciones diferenciales parciales y como resolverlas usando el lenguaje Julia y Python.</div>
+              <p></p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Agosto 2020 - Diciembre 2020</span>
+            </div>
+          </div>
+            
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Qiskit Global Summer School</h3>
+              <div class="subheading mb-3">Escuela de verano donde se enseño como utilizar la libreria Qiskit para computo cuántico</div>
+              <div>Se desarrollo un circuito el cual realizaba la simulación de un compuesto químico.</div>
+              <p></p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Julio 2020 - Julio 2020</span>
+            </div>
+          </div>
+            
+           
         </div>
       </section>
       <section
@@ -192,28 +315,55 @@
         <div class="w-100">
           <h2 class="mb-5">Actividad Social</h2>
 
-          {% for _, item in data.community.items() %} {% if _ != 'reference' %}
+           
           <div
             class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
           >
             <div class="resume-content">
-              <h3 class="mb-0">{{ item.institution }}</h3>
-              <div class="subheading mb-3">{{ item.program }}</div>
-              <div>{{ item.description }}</div>
-              {% if item.link != None %}
-              <a style="color:#f8f8f2" href="{{ item.link }}">Página del grupo</a>
-              {% endif %}
+              <h3 class="mb-0">QuantumHispano</h3>
+              <div class="subheading mb-3">Cofundador</div>
+              <div>Cofundador de la comunidad QuantumHispano, la cual es la encargada de la coordinación de cursos para la introducción en la computación cuántica y la divulgación de los avances científicos en esta rama de la física y computación</div>
+              
+              <a style="color:#f8f8f2" href="https://quantumhispano.org/">Página del grupo</a>
+              
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">{{ item.from }} - {{ item.to }}</span>
+              <span class="text-primary">Agosto 2019 - Presente</span>
             </div>
           </div>
-          {% else %}
-          <p>
-            For a detailed reference about this section, please visit
-            <a href="{{ item }}" target="_blank">this link</a>.
-          </p>
-          {% endif %} {% endfor %}
+            
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Universidad Autónoma de Nuevo León</h3>
+              <div class="subheading mb-3">Talleres Estudiantiles FCFM-UANL</div>
+              <div>He impartido y coordinado cada semestre una serie de talleres para el desarrollo de los estudiantes de la universidad en ambitos extras para que el desarrollo sea el optimo, esto enseñando herramientas más avanzadas para el análisis y visualización de datos y simulaciones moleculares</div>
+              
+              <a style="color:#f8f8f2" href="https://www.facebook.com/groups/1716503418572046">Página del grupo</a>
+              
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Agosto 2018 - Presente</span>
+            </div>
+          </div>
+            
+          <div
+            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+          >
+            <div class="resume-content">
+              <h3 class="mb-0">Facultad de Ciencias Físico-Matemáticas</h3>
+              <div class="subheading mb-3">Coordinación de la Asociación de Estudiantes de Física</div>
+              <div>Desarrolle la coordinación de Tesorería de la Asociación de Estudiantes de Física, creando y llevando acabo actividades economicas para la recaudación de fondos para las actividades y apoyos para la comunidad estudiantil.</div>
+              
+              <a style="color:#f8f8f2" href="https://www.facebook.com/groups/193411004019887">Página del grupo</a>
+              
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Agosto 2017 - Noviembre 2018</span>
+            </div>
+          </div>
+           
         </div>
       </section>
 
@@ -225,33 +375,25 @@
           <h2 class="mb-5">Proyectos</h2>
           <!-- Begins card -->
           <div class="row">
-            {% for _, item in data.projects.items() %}
+            
             <div class="col-md-4 mb-5">
               <div class="card h-100">
                 <img
-                  src="static/img/{{ item.img }}"
+                  src="static/img/trend_paper.jpg"
                   class="card-img-top"
-                  alt="{{ item.title }}"
+                  alt="Ultraviolet Radiation Environment of a Tropical Megacity in Transition Mexico City 2000–2019"
                 />
                 <div class="card-body">
-                  <h3 class="card-title">{{ item.title }}</h3>
-                  <h5 class="card-title">{{ item.subtitle }}</h5>
+                  <h3 class="card-title">Ultraviolet Radiation Environment of a Tropical Megacity in Transition Mexico City 2000–2019</h3>
+                  <h5 class="card-title"></h5>
                   <p>
-                    {% for tag in item.tags %}
-                    <span class="badge badge-pill badge-secondary"
-                      >{{ tag }}</span
-                    >
-                    {% endfor %}
+                    
                   </p>
                 </div>
                 <div class="card-footer">
-                  {% if item.github != None %}
-                  <a href="{{ item.github }}" class="text-dark" target="_blank">
-                    <i class="fab fa-github-square fa-2x"></i>
-                  </a>
-                  {% endif %}
+                  
                   <a
-                    href="{{ item.link }}"
+                    href="https://pubs.acs.org/doi/10.1021/acs.est.0c08515"
                     class="btn btn-dark float-right"
                     target="_blank"
                     >Ver documento</a
@@ -259,7 +401,271 @@
                 </div>
               </div>
             </div>
-            {% endfor %}
+            
+            <div class="col-md-4 mb-5">
+              <div class="card h-100">
+                <img
+                  src="static/img/informe_sima.png"
+                  class="card-img-top"
+                  alt="Instalación sugerida para los sensores Skye UVA, UVB y UVI"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Instalación sugerida para los sensores Skye UVA, UVB y UVI</h3>
+                  <h5 class="card-title"></h5>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="card-footer">
+                  
+                  <a
+                    href="https://github.com/giovannilopez9808/Documents/raw/master/Informes/Informe_radsolar_29Mar21.pdf"
+                    class="btn btn-dark float-right"
+                    target="_blank"
+                    >Ver documento</a
+                  >
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-5">
+              <div class="card h-100">
+                <img
+                  src="static/img/tes_webpage.png"
+                  class="card-img-top"
+                  alt="TES para tu salud"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">TES para tu salud</h3>
+                  <h5 class="card-title"></h5>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="card-footer">
+                  
+                  <a
+                    href="http://tes-v1.herokuapp.com/"
+                    class="btn btn-dark float-right"
+                    target="_blank"
+                    >Ver documento</a
+                  >
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-5">
+              <div class="card h-100">
+                <img
+                  src="static/img/vitamin_paper.png"
+                  class="card-img-top"
+                  alt="Comparación de tres métodos usando radiación solar para la producción de Pre-Vitamina D3 en la piel."
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Comparación de tres métodos usando radiación solar para la producción de Pre-Vitamina D3 en la piel.</h3>
+                  <h5 class="card-title"></h5>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="card-footer">
+                  
+                  <a
+                    href="https://github.com/giovannilopez9808/Documents/raw/master/Articulos/Vitamin_D_2020.pdf"
+                    class="btn btn-dark float-right"
+                    target="_blank"
+                    >Ver documento</a
+                  >
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-5">
+              <div class="card h-100">
+                <img
+                  src="static/img/animation.gif"
+                  class="card-img-top"
+                  alt="Análisis basado en imágenes satelitales de Google Earth en el periodo 25/May/2006 al 10/Ago/2019"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Análisis basado en imágenes satelitales de Google Earth en el periodo 25/May/2006 al 10/Ago/2019</h3>
+                  <h5 class="card-title"></h5>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="card-footer">
+                  
+                  <a
+                    href="https://github.com/giovannilopez9808/Documents/raw/master/Informes/Edge_detection_2020.pdf"
+                    class="btn btn-dark float-right"
+                    target="_blank"
+                    >Ver documento</a
+                  >
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-5">
+              <div class="card h-100">
+                <img
+                  src="static/img/viirs-Fire.gif"
+                  class="card-img-top"
+                  alt="Localización de incendios en el Delta del río Paraná"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Localización de incendios en el Delta del río Paraná</h3>
+                  <h5 class="card-title"></h5>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="card-footer">
+                  
+                  <a
+                    href="https://github.com/giovannilopez9808/Documents/raw/master/Informes/Focos%20de%20incendio%20en%20las%20islas%20del%20Paran%C3%A1%20%20frente%20a%20Rosario%20%20(Piacentini%2C%20Ipi%C3%B1a%2C%20Lopez-Padilla%2C%20Bolmaro)%20(Piacentini).pdf"
+                    class="btn btn-dark float-right"
+                    target="_blank"
+                    >Ver documento</a
+                  >
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-5">
+              <div class="card h-100">
+                <img
+                  src="static/img/fractal.gif"
+                  class="card-img-top"
+                  alt="Creación de fractales usando el conjunto de Julia"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Creación de fractales usando el conjunto de Julia</h3>
+                  <h5 class="card-title"></h5>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="card-footer">
+                  
+                  <a href="https://github.com/giovannilopez9808/Julia_WorkShop_2021Q1/blob/main/soluci%C3%B3n_primer_proyecto_1/Primer_proyecto.ipynb" class="text-dark" target="_blank">
+                    <i class="fab fa-github-square fa-2x"></i>
+                  </a>
+                  
+                  <a
+                    href="None"
+                    class="btn btn-dark float-right"
+                    target="_blank"
+                    >Ver documento</a
+                  >
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-5">
+              <div class="card h-100">
+                <img
+                  src="static/img/tes_poster.png"
+                  class="card-img-top"
+                  alt="Estimación de los TES en la Ciudad de México"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Estimación de los TES en la Ciudad de México</h3>
+                  <h5 class="card-title"></h5>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="card-footer">
+                  
+                  <a
+                    href="https://github.com/giovannilopez9808/Documents/raw/master/Posters/2020/CNF/TES/main.pdf"
+                    class="btn btn-dark float-right"
+                    target="_blank"
+                    >Ver documento</a
+                  >
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-5">
+              <div class="card h-100">
+                <img
+                  src="static/img/pm_poster.png"
+                  class="card-img-top"
+                  alt="Análisis a los parámetros atmosféricos en el Área Metropolitana de Monterrey"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Análisis a los parámetros atmosféricos en el Área Metropolitana de Monterrey</h3>
+                  <h5 class="card-title"></h5>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="card-footer">
+                  
+                  <a
+                    href="https://github.com/giovannilopez9808/Documents/raw/master/Posters/2020/CNF/PM10/main.pdf"
+                    class="btn btn-dark float-right"
+                    target="_blank"
+                    >Ver documento</a
+                  >
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-5">
+              <div class="card h-100">
+                <img
+                  src="static/img/transferencia_poster.png"
+                  class="card-img-top"
+                  alt="Estudio de la irradiancia solar con dos modelos de transferencia radiativa y su comparación con mediciones"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Estudio de la irradiancia solar con dos modelos de transferencia radiativa y su comparación con mediciones</h3>
+                  <h5 class="card-title"></h5>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="card-footer">
+                  
+                  <a
+                    href="https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/CNF/Transferencia%20radiativa/main.pdf"
+                    class="btn btn-dark float-right"
+                    target="_blank"
+                    >Ver documento</a
+                  >
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-5">
+              <div class="card h-100">
+                <img
+                  src="static/img/irradiancia_poster.png"
+                  class="card-img-top"
+                  alt="Análisis de las irradiancioas UVA y eritémica medidas por el sistema de monitoreo atmosférico de la Ciudad de México"
+                />
+                <div class="card-body">
+                  <h3 class="card-title">Análisis de las irradiancioas UVA y eritémica medidas por el sistema de monitoreo atmosférico de la Ciudad de México</h3>
+                  <h5 class="card-title"></h5>
+                  <p>
+                    
+                  </p>
+                </div>
+                <div class="card-footer">
+                  
+                  <a
+                    href="https://github.com/giovannilopez9808/Documents/raw/master/Posters/2019/AFA/Analisis%20indice%20UV/Analisis%20de%20irradiancia.pdf"
+                    class="btn btn-dark float-right"
+                    target="_blank"
+                    >Ver documento</a
+                  >
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
